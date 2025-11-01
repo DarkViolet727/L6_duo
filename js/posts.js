@@ -1,5 +1,3 @@
-// posts.js - управление постами
-
 let allPosts = [];
 
 async function renderPosts(root, userId = null) {

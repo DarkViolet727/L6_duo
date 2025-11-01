@@ -1,5 +1,3 @@
-// todos.js - управление задачами
-
 let allTodos = [];
 let localTodos = JSON.parse(localStorage.getItem("localTodos")) || [];
 

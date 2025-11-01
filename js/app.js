@@ -1,5 +1,3 @@
-// app.js - главный роутер приложения
-
 const root = document.getElementById("root");
 
 function router() {

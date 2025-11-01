@@ -1,5 +1,3 @@
-// users.js - управление пользователями
-
 let allUsers = [];
 let localUsers = JSON.parse(localStorage.getItem("localUsers")) || [];
 
@@ -133,8 +131,7 @@ function addUser(root) {
   localStorage.setItem("localUsers", JSON.stringify(localUsers));
   allUsers.push(newUser);
   renderUserList(allUsers, root);
-  
-  // Очищаем поля
+
   document.getElementById("newName").value = "";
   document.getElementById("newEmail").value = "";
 }
@@ -147,6 +144,5 @@ function deleteUser(email, root) {
 }
 
 function navigateToUser(userId) {
-  // Можно добавить логику для перехода к конкретному пользователю
   console.log("Переход к пользователю:", userId);
 }

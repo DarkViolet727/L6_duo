@@ -15,8 +15,7 @@ function renderBreadcrumbs(path) {
   parts.forEach((part, i) => {
     currentPath += (i === 0 ? "#" : "#") + part;
     const labelData = breadcrumbLabels[part] || { text: part, icon: "📁" };
-    
-    // Добавляем дополнительную информацию для подразделов
+
     let displayText = labelData.text;
     if (i === 2 && parts[0] === "users" && parts[1] === "todos") {
       displayText += ` (ID: ${part})`;

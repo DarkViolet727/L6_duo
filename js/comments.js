@@ -1,5 +1,3 @@
-// comments.js - управление комментариями
-
 let allComments = [];
 
 async function renderComments(root, postId = null) {
